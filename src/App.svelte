@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte'
-  export let name
+  export let name = 'rasmus'
   export let message
   onMount(async () => {
     let data = await (await fetch('/api')).json()
